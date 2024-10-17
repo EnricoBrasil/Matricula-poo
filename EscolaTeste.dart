@@ -1,12 +1,20 @@
 import 'Aluno.dart';
+import 'Curso.dart';
 import 'dart:io';
 
 void main() {
+  //Variaveis de aluno
   String nome;
   int? idade;
   String cpf;
   String telefone;
   String sexo;
+
+  //variaveis do curso
+  int idCurso;
+  String nomeCurso;
+  int cargaHoraria;
+  String valor;
 
   print('\nSeja Bem-vindo a matricula escolar!');
 
@@ -29,6 +37,8 @@ void main() {
 
   Aluno.alunos.add(aluno);
   print("${aluno.getAlunos()}");
+
+
 
 
 

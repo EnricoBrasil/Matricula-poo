@@ -5,10 +5,11 @@ class Aluno{
   late String nome;
   late String cpf;
   late String telefone;
+  late String sexo;
 
   static List<Aluno> alunos = [];
 
-  Aluno(this.nome,this.idade,this.cpf,this.telefone);
+  Aluno(this.nome,this.idade,this.cpf,this.telefone,this.sexo);
 
   String getAlunos(){
     String dados = "";
@@ -20,14 +21,9 @@ class Aluno{
           idade: ${alunos[i].idade}
           cpf: ${alunos[i].cpf}
           telefone: ${alunos[i].telefone}
+          sexo: ${alunos[i].sexo}
           """;
     }
     return dados;
-  }
-  void matricularAluno() {
-    print('Digite o nome do aluno: $nome');
-    print('Digite a idade do aluno: $idade');
-    print('Digite o cpf do aluno: $cpf');
-    print('Digite o telefone do aluno: $telefone');
   }
 }

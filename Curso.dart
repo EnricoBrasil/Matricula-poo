@@ -16,9 +16,9 @@ class Curso{
         print('Curso de Medicina');
         break;
       case 'Direito':
-        print('Curso de DIreito');
+        print('Curso de Direito');
         break;
-      case 'Sistema de informação';
+      case 'Sistema de informação':
         print('Curso de Sistema de Informação');
         break;
       default:

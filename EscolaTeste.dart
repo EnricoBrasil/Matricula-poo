@@ -12,11 +12,11 @@ void main() {
 
   //variaveis do curso
   int idCurso;
-  String nomeCurso;
+  late String nomeCurso = stdin.readLineSync()!;
   int cargaHoraria;
   String valor;
 
-  print('\nSeja Bem-vindo a matricula escolar!');
+ /* print('\nSeja Bem-vindo a matricula escolar!');
 
   print('Informe o nome do aluno: ');
   nome = stdin.readLineSync()!;
@@ -33,10 +33,33 @@ void main() {
   print('Informe o sexo: ');
   sexo = stdin.readLineSync()!;
 
+  print('NomeCurso: ');
+  */
+
+  print('Digite o numero do curso escolhido');
+  print('1) Medicina \n 2)Direito \n 3)Sistema de informação');
+  String curso = nomeCurso;
+
+    switch (curso) {
+      case '1':
+        print('Curso de Medicina');
+        break;
+      case '2':
+        print('Curso de Direito');
+        break;
+      case '3':
+        print('Curso de Sistema de Informação');
+        break;
+      default:
+        print('Não foi encontrado esse curso');
+    }
+    print(curso);
+
+ /*
   Aluno aluno = Aluno(nome, idade, cpf, telefone,sexo);
 
   Aluno.alunos.add(aluno);
-  print("${aluno.getAlunos()}");
+  print("${aluno.getAlunos()}");*/
 
 
 

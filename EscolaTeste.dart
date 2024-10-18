@@ -16,7 +16,7 @@ void main() {
   int cargaHoraria;
   String valor;
 
- /* print('\nSeja Bem-vindo a matricula escolar!');
+  print('\nSeja Bem-vindo a matricula escolar!');
 
   print('Informe o nome do aluno: ');
   nome = stdin.readLineSync()!;
@@ -34,7 +34,6 @@ void main() {
   sexo = stdin.readLineSync()!;
 
   print('NomeCurso: ');
-  */
 
   print('Digite o numero do curso escolhido');
   print('1) Medicina \n 2)Direito \n 3)Sistema de informação');
@@ -55,11 +54,10 @@ void main() {
     }
     print(curso);
 
- /*
   Aluno aluno = Aluno(nome, idade, cpf, telefone,sexo);
 
   Aluno.alunos.add(aluno);
-  print("${aluno.getAlunos()}");*/
+  print("${aluno.getAlunos()}");
 
 
 

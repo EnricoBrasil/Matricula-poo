@@ -11,10 +11,10 @@ void main() {
   String sexo;
 
   //variaveis do curso
-  int idCurso;
-  late String nomeCurso = stdin.readLineSync()!;
-  int cargaHoraria;
-  String valor;
+  int idCurso = 0;
+  String nomeCurso = stdin.readLineSync()!;
+  int cargaHoraria = 0;
+  String valor = '';
 
   print('\nSeja Bem-vindo a matricula escolar!');
 
@@ -39,29 +39,12 @@ void main() {
   print('1) Medicina \n 2)Direito \n 3)Sistema de informação');
   String curso = nomeCurso;
 
-    switch (curso) {
-      case '1':
-        print('Curso de Medicina');
-        break;
-      case '2':
-        print('Curso de Direito');
-        break;
-      case '3':
-        print('Curso de Sistema de Informação');
-        break;
-      default:
-        print('Não foi encontrado esse curso');
-    }
-    print(curso);
+  Curso cur = Curso(idCurso,nomeCurso,cargaHoraria,valor);
+  cur.escolherCurso();
 
   Aluno aluno = Aluno(nome, idade, cpf, telefone,sexo);
 
   Aluno.alunos.add(aluno);
   print("${aluno.getAlunos()}");
-
-
-
-
-
 
 }

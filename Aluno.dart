@@ -1,4 +1,4 @@
-
+import 'EscolaTeste.dart';
 class Aluno{
   late int idade;
   late String nome;
@@ -7,7 +7,6 @@ class Aluno{
   late String sexo;
 
   static List<Aluno> alunos = [];
-
   Aluno(this.nome,this.idade,this.cpf,this.telefone,this.sexo);
 
   String getAlunos(){
@@ -21,6 +20,7 @@ class Aluno{
           cpf: ${alunos[i].cpf}
           telefone: ${alunos[i].telefone}
           sexo: ${alunos[i].sexo}
+          
           """;
     }
     return dados;

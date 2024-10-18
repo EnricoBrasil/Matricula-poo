@@ -23,6 +23,7 @@ class Curso{
         break;
       default:
         print('Não foi encontrado esse curso');
+        break;
     }
   }
 
